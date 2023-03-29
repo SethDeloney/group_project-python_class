@@ -104,7 +104,7 @@ canvas = tk.Canvas(root, width=1000, height= 500)
 canvas.grid(columnspan=25, rowspan=25)
 
 
-root.iconbitmap("BrickICO.ico")
+root.iconbitmap(".\\assets\\BrickICO.ico")
 root.title('Brick Clicker')
 
 #Creating Elements
@@ -118,14 +118,14 @@ textHouse = Label(root, text= str(houseCounter) + "   Houses Built" )
 textSam = Label(root, text= str(SamfordCounter) + "   Samford Halls Constructed" )
 
 #THE BRICK
-IMG = PIL.Image.open("brickPNG.png")
+IMG = PIL.Image.open(".\\assets\\brickPNG.png")
 brickIMG = PIL.ImageTk.PhotoImage(IMG)
 BrickBtn = tk.Button(root,image=brickIMG,
                  command= add_to_brickCounter, borderwidth= 0)
 
 
 #Logo
-IMG = PIL.Image.open("Logo.png")
+IMG = PIL.Image.open(".\\assets\\Logo.png")
 LogoIMG = PIL.ImageTk.PhotoImage(IMG)
 LogoLabel = tk.Label(root,image=LogoIMG, borderwidth=0)
 
